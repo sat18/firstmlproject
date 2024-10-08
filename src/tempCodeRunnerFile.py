@@ -1,5 +1,6 @@
 import sys 
-import logging
+from src.logger import logging
+
 '''
 1) Get information about the computer we're using, 
 like what kind of computer it is (Windows, Mac, Linux, etc.)
@@ -28,5 +29,3 @@ if __name__=="__main__":
     except Exception as e:
         logging.info("divide by Zero")
         raise CustomException(e,sys)
-
-
